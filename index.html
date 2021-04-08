@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8"> 
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=11.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    
+      
+
+  <title>Javascript Tip Calculator</title>
+</head>
+<body>
+<div class="wrapper">
+    <div class="navbar">
+      <ul>
+        <li><a href="#home" class="a_parent">
+          <div class="wrap">
+            <span class="icon">
+              <i class="fas fa-home" aria-hidden="true"></i>
+            </span>
+            <span class="text">Home</span>
+          </div>
+        </a></li>
+        <li><a href="#" class="a_parent">
+          <div class="wrap">
+            <span class="icon">
+              <i class="fas fa-volleyball-ball" aria-hidden="true"></i>
+            </span>
+            <span class="text">Banking</span>
+          </div>
+          </a>
+          <div class="dd_menu">
+            <ul>
+              <li>
+                <a href="#si" class="dd_menu_a">
+                  <div class="wrap">
+                    <span class="icon">
+                    <i class="fas fa-running" aria-hidden="true"></i>
+                    </span>
+                    <span class="text">
+                    Simple Intrest
+                    </span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#ci"  class="dd_menu_a">
+                  <div class="wrap">
+                    <span class="icon">
+                    <i class="fas fa-biking" aria-hidden="true"></i>
+                    </span>
+                    <span class="text">Compound Interest</span>
+                  </div>
+                </a>
+                <div class="dd_submenu">
+                  <ul>
+                    <li>
+                      <a href="#find-factors">
+                        <div class="wrap">
+                          <span class="icon">
+                          <i class="fas fa-running" aria-hidden="true"></i>
+                          </span>
+                          <span class="text">
+                          find factors
+                          </span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#HCM">
+                        <div class="wrap">
+                          <span class="icon">
+                          <i class="fas fa-biking" aria-hidden="true"></i>
+                          </span>
+                          <span class="text">HCM</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#LCM">
+                        <div class="wrap">
+                        <span class="icon">
+                        <i class="far fa-futbol" aria-hidden="true"></i>
+                        </span>
+                        <span class="text">LCM</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#prime">
+                        <div class="wrap">
+                        <span class="icon">
+                        <i class="fas fa-swimmer" aria-hidden="true"></i>
+                        </span>
+                        <span class="text">Prime nos</span>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#coprime"  class="dd_menu_a">
+                  <div class="wrap">
+                  <span class="icon">
+                  <i class="far fa-futbol" aria-hidden="true"></i>
+                  </span>
+                  <span class="text">coprime paires</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#loan"  class="dd_menu_a">
+                  <div class="wrap">
+                  <span class="icon">
+                  <i class="fas fa-swimmer" aria-hidden="true"></i>
+                  </span>
+                  <span class="text">Loan calc</span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#" class="a_parent">
+          <div class="wrap">
+            <span class="icon">
+            <i class="fas fa-utensils" aria-hidden="true"></i>
+            </span>
+            <span class="text">post office</span>
+          </div>
+          </a>
+          <div class="dd_menu">
+            <ul>
+              <li>
+                <a href="#monthlyincom" class="dd_menu_a">
+                  <div class="wrap">
+                    <span class="icon">
+                    <i class="fas fa-running" aria-hidden="true"></i>
+                    </span>
+                    <span class="text">
+                    monthly-incomes-cheme
+                    </span>
+                  </div>
+                </a>
+                <div class="dd_submenu">
+                  <ul>
+                    <li>
+                      <a href="#recurringdepo">
+                        <div class="wrap">
+                          <span class="icon">
+                          <i class="fas fa-running" aria-hidden="true"></i>
+                          </span>
+                          <span class="text">
+                          recurring-deposit
+                          </span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#timedeposite">
+                        <div class="wrap">
+                          <span class="icon">
+                          <i class="fas fa-biking" aria-hidden="true"></i>
+                          </span>
+                          <span class="text">time deposite</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#nathinalsavcer">
+                        <div class="wrap">
+                        <span class="icon">
+                        <i class="far fa-futbol" aria-hidden="true"></i>
+                        </span>
+                        <span class="text">Natinal saving certi.</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#interestrate">
+                        <div class="wrap">
+                        <span class="icon">
+                        <i class="fas fa-swimmer" aria-hidden="true"></i>
+                        </span>
+                        <span class="text">interestrate</span>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#" class="dd_menu_a">
+                  <div class="wrap">
+                    <span class="icon">
+                    <i class="fas fa-biking" aria-hidden="true"></i>
+                    </span>
+                    <span class="text">bank-post-office</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#publicprovid" class="dd_menu_a">
+                  <div class="wrap">
+                  <span class="icon">
+                  <i class="far fa-futbol" aria-hidden="true"></i>
+                  </span>
+                  <span class="text">public-provident-fun</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#sukanya-smmridhi-acc" class="dd_menu_a">
+                  <div class="wrap">
+                  <span class="icon">
+                  <i class="fas fa-swimmer" aria-hidden="true"></i>
+                  </span>
+                  <span class="text">sukanya-smmridhi-acc</span>
+                  </div>
+                </a>
+                <div class="dd_submenu">
+                  <ul>
+                    <li>
+                      <a href="#seniorcetizen">
+                        <div class="wrap">
+                          <span class="icon">
+                          <i class="fas fa-running" aria-hidden="true"></i>
+                          </span>
+                          <span class="text">
+                          senior-citizen-acc
+                          </span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#kisanvikas">
+                        <div class="wrap">
+                          <span class="icon">
+                          <i class="fas fa-biking" aria-hidden="true"></i>
+                          </span>
+                          <span class="text">kisaan-vikas-patra</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#fixedepo">
+                        <div class="wrap">
+                        <span class="icon">
+                        <i class="far fa-futbol" aria-hidden="true"></i>
+                        </span>
+                        <span class="text">fixed deposit(TDR)</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#fixed">
+                        <div class="wrap">
+                        <span class="icon">
+                        <i class="fas fa-swimmer" aria-hidden="true"></i>
+                        </span>
+                        <span class="text">fixed deposite(STDR)</span>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#discount" class="a_parent">
+          <div class="wrap">
+            <span class="icon">
+            <i class="fas fa-paper-plane" aria-hidden="true"></i>
+            </span>
+            <span class="text">discount</span>
+          </div>
+        </a></li>
+        <li><a href="#contact" class="a_parent">
+          <div class="wrap">
+            <span class="icon">
+            <i class="fas fa-cog" aria-hidden="true"></i>
+            </span>
+            <span class="text">contact</span>
+          </div>
+        </a></li>
+        </ul>
+    </div>
+  </div>
+<section id="home">
+  <div class="bgimage">
+    <div class="menu">
+    
+       <div class="leftmenu">  
+               <h4>Calculus
+               </h4>
+           </div>
+           
+           <!--- <div class="rightmenu">
+
+
+               - <ul>
+                     <li id="firstlist"> HOME </li>
+                     <li> Services </li>
+                     <li> Works </li>
+                    <li> About </li>
+         <li> Blogs </li>
+   <li> Contacts </li>
+                     
+                 </ul>               	 
+               </div>
+              -->
+
+      </div> 
+       
+       <div class="text">
+          <h4> DESIGN * DEVELOPMENT *BRANDING</h4>
+          <h1> CREATIVE & EXPERIENCED </h1>
+          <h3> WE ARE ONE OF THE WORLD'S BEST CREATIVE DESIGN AGENCIES </h3>
+            <button id="buttonone"> like and share</button>
+            <button id="buttontwo"> subscribe </button>
+           </div>
+        </div>   
+</section>
+
+<section id="si">
+  <div id="container1">
+    <div id=rec>
+    <h1 class="fontslable">Lets calculate simple inetrest</h1>
+    </div>
+ <hr>
+    <div>
+      <label class="fontslable">Principal Amount</label>
+      <input class="fontslables" type="text" placeholder="Principal amount" id="billTotal">
+    </div>
+    <div>
+      <label class="fontslable">Rate of interest</label>
+      <input class="fontslables" type="text" placeholder="rate of interest in percentage" id="billTotal2">
+    </div>
+    <div>
+      <label class="fontslable">time</label>
+      <input class="fontslables" type="text" placeholder="in years" id="billTotal3">
+    </div>
+  <hr>
+    <div id=rec2>
+      <div>
+        <label class="fonts">Simple interest</label><span class="fontss" id="newBill"> 0</span>
+      </div>
+      <div>
+        <label class="fonts">Principal amt</label><span class="fontss" id="newBill2"> 0</span>
+      </div>
+      <div>
+        <label class="fonts">Rate of interst</label><span class="fontss" id="newBill3"> 0</span>
+      </div>
+      <div>
+      <div>
+        <label class="fonts" >Time in years</label><span class="fontss" id="tipAmount"> 0</span>
+      </div>
+    </div>
+  </div>
+
+  </div>
+</section>
+
+<section id="ci">
+  
+  <div id="container2">
+
+    <div id=rec>
+    <h1 class="fontslable">Lets calculate compound inetrest</h1>
+    </div>
+    
+ <hr>
+    <div>
+      <label class="fontslable">Principal Amount</label>
+      <input class="fontslables" type="text" placeholder="Principal amount" id="text1">
+    </div>
+    <div>
+      <label class="fontslable">Rate of interest</label>
+      <input class="fontslables" type="text" placeholder="rate of interest in percentage" id="text2">
+    </div>
+    <div>
+      <label class="fontslable">time</label>
+      <input class="fontslables" type="text" placeholder="in years" id="text3">
+    </div>
+  <hr>
+  <div id=rec2>
+    <div>
+      <label class="fonts">compound interest</label> <span class="fontss" id="newBill"> 0</span>
+    </div>
+    <div>
+      <label class="fonts">Principal amt</label><span class="fontss" id="newBill2"> 0</span>
+    </div>
+    <div>
+      <label class="fonts">Rate of interst</label><span class="fontss" id="newBill3"> 0</span>
+    </div>
+    <div>
+    <div>
+      <label class="fonts" >Time in years</label><span class="fontss" id="tipAmount"> 0</span>
+    </div>
+  </div>
+</div>
+  
+
+    <div id=loan>
+      <div class="bg-dark">
+        <div id="container2">
+              <div id=rec>
+                <h1 class="fontslable">Lets calculate loan Interest</h1>
+                </div>
+
+
+                 <form id="loan-form">
+                     <div class="form-group input-group">
+                      <label class="fontslable">Loan amount</label><input type="number" class="fontslables" id="amount" placeholder="Loan amount">
+                     </div>
+                     <div class="form-group input-group">
+                      <label class="fontslable">Rate of Interest</label> <input type="number" class="fontslables" id="interest" placeholder="Interest">
+                     </div>
+                     <div class="form-group input-group">
+                      <label class="fontslable">Time in year</label><input type="number" class="fontslables" id="years" placeholder="Years To Repay">
+                     </div>
+                     <div class="form-group">
+                         <input type="submit" id="buttonone" class="btn btn-block btn-dark" value="Calculate">
+                     </div>
+                 </form>
+ 
+                 <!--LOADER-->
+                 
+                 <div id="loading">
+                     <img src="img/loading.gif" alt="">
+                 </div>
+                 
+                 <!--RESULT-->
+                 <div id="results" class="pt-4">
+                   <div id=rec2>
+                     <h5>Results</h5>
+                     <div class="form-group input-group">
+                         <div class="input-group-append">
+                          
+                         </div>
+                         <label class="fonts">Monthly payment</label><input type="number" class="fontslables" id="monthly-payment" disabled>
+                     </div> 
+
+                     <div class="form-group input-group">
+                         
+                         <label class="fonts">total-payment</label><input type="number" class="fontslables" id="total-payment" disabled>
+                     </div>
+
+                     <div class="form-group input-group">
+                         
+                         <label class="fonts">total-interest</label><input type="number" class="fontslables" id="total-interest" disabled>
+                     </div>
+
+                   </div>
+                 </div>
+             
+            
+                </div>   
+    </div>   
+  </div>
+
+  <div id=coprime>
+    <div class="bg-dark">
+      <div id="container2">
+            <div id=rec>
+              <h1 class="fontslable">Lets calculate coprime numbers</h1>
+              </div>
+
+
+               <form id="loan-forms">
+                   <div class="form-group input-group">
+                    <label class="fontslable">Loan amount</label><input type="number" class="fontslables" id="amount1" placeholder="Loan amount">
+                   </div>
+                   <div class="form-group input-group">
+                    <label class="fontslable">Rate of Interest</label> <input type="number" class="fontslables" id="interest1" placeholder="Interest">
+                   </div>
+                   <div class="form-group input-group">
+                    <label class="fontslable">Time in year</label><input type="number" class="fontslables" id="years1" placeholder="Years To Repay">
+                   </div>
+                   <div class="form-group">
+                       <input type="submit" id="buttonone" class="btn btn-block btn-dark1" value="Calculate">
+                   </div>
+               </form>
+
+               <!--LOADER-->
+               
+               <div id="loadings">
+                   <img src="img/loading.gif" alt="">
+               </div>
+               
+               <!--RESULT-->
+               <div id="resultss" class="pt-4">
+                 <div id=rec2>
+                   <h5>Results</h5>
+                   <div class="form-group input-group">
+                       <div class="input-group-append">
+                        
+                       </div>
+                       <label class="fonts">Monthly payment</label><input type="number" class="fontslables" id="monthly-payment1" disabled>
+                   </div> 
+
+                   <div class="form-group input-group">
+                       
+                       <label class="fonts">total-payment</label><input type="number" class="fontslables" id="total-payment1" disabled>
+                   </div>
+
+                   <div class="form-group input-group">
+                       
+                       <label class="fonts">total-interest</label><input type="number" class="fontslables" id="total-interest1" disabled>
+                   </div>
+
+                 </div>
+               </div>
+           
+          
+              </div>   
+  </div>   
+</div>
+
+  
+</section>
+<script src="js/app.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https3://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+<script>
+    //get  the current year for the copyright
+    $('#year').text(new Date().getFullYear());
+</script>
+  <script src="script.js"></script>
+</body>
+
+</html> 
